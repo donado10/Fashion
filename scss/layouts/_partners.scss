@@ -1,0 +1,16 @@
+.partners {
+  width: 100%;
+  background: $color1;
+
+  &-logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .logo {
+      img {
+        background: transparent;
+      }
+    }
+  }
+}

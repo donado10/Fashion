@@ -1,0 +1,13 @@
+body {
+  @include flexcentered;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid red;
+  width: 90%;
+  gap: 3rem;
+  font-family: $ff-primary;
+}

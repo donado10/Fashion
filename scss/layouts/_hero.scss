@@ -1,0 +1,78 @@
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 1rem;
+  width: 100%;
+  background: $color5;
+  border-radius: $border-radius3;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+
+  &-title {
+    grid-column: 1;
+    grid-row: 1/2;
+
+    span {
+      position: relative;
+      z-index: 1;
+    }
+
+    span::before {
+      position: absolute;
+      content: "";
+      width: 120%;
+      height: 120%;
+      background: white;
+      z-index: -1;
+      transform: rotate(-2deg) translate(-5%, -10%);
+    }
+
+    span.color1::before {
+      width: 140%;
+    }
+    span.color2::before {
+      background: $color1;
+    }
+  }
+  &-description {
+    grid-column: 1;
+    grid-row: 2/3;
+  }
+
+  &-links {
+    grid-column: 1;
+    grid-row: 4/5;
+    display: flex;
+    gap: 1rem;
+    .hero-vector {
+      width: 30%;
+      @include flexcentered;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &-cta {
+    padding: 1rem 2rem;
+  }
+
+  &-image {
+    grid-column: 2;
+    grid-row: 1/-1;
+    width: 100%;
+    position: relative;
+    .image {
+      width: 100%;
+
+      @include flexcentered;
+      justify-content: end;
+      img {
+        width: 100%;
+        aspect-ratio: 1.1/1;
+      }
+    }
+  }
+}

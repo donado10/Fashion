@@ -1,0 +1,10 @@
+.header {
+  .company-name {
+    @include set-font($fs-large, $fw-very-bold);
+  }
+
+  li > * {
+    color: $txt-secondColor;
+    @include set-font($fs-semi-regular, $fw-semi-regular);
+  }
+}

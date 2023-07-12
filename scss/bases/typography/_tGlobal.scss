@@ -1,0 +1,4 @@
+.primary-cta {
+  @include set-font($fs-semi-regular, $fw-semi-bold);
+  color: $txt-thirdColor;
+}

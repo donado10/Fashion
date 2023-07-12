@@ -1,0 +1,13 @@
+font-size:
+  - semi-regular: 8
+  - regular: 16
+  - semi-large: 20
+  - large: 24
+  - semi-enormous: 32
+  - enormous: 39
+  - giant: 80
+font-family:
+  - primary: Poppins
+font-weight:
+  -
+  - 900,400,500,700
